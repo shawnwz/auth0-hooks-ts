@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Auth0Provider} from './contexts/auth0-context'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Auth0Provider>
     <App />
-  </React.StrictMode>,
+  </Auth0Provider>,
   document.getElementById('root')
 );
 
